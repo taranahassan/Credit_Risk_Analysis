@@ -10,7 +10,7 @@ After the data was cleaned and preprocessed Six machine learning models have bee
 ### Resampling Algorithms
 The first 4 models below are based on resampling data.
 <br>
-  1.  **Random Oversampling:**  In this algorithm, the minority class is selected randomly and added to the training set until both majority and minority classes are balanced. <br> 
+1.  **Random Oversampling:**  In this algorithm, the minority class is selected randomly and added to the training set until both majority and minority classes are balanced. <br> 
 
 ![randomoversampling_class_count](https://user-images.githubusercontent.com/75437852/115762647-b21fea00-a371-11eb-81c0-4571054fa0bd.PNG) <br>
   
@@ -21,7 +21,8 @@ The results were:
 
 ![randomoversampling](https://user-images.githubusercontent.com/75437852/115762686-bb10bb80-a371-11eb-825f-3b3b9b850827.PNG)<br>
   <br>
-  2.  **SMOTE:**  This oversampling method is by creating synthetic points for the minority class based on the values of the neighboring instances.  As per the image below, the classes are balanced.<br>
+  <br>
+2.  **SMOTE:**  This oversampling method is by creating synthetic points for the minority class based on the values of the neighboring instances.  As per the image below, the classes are balanced.<br>
 
 ![smote_class_count](https://user-images.githubusercontent.com/75437852/115762714-c2d06000-a371-11eb-805a-515f90ccbf64.PNG)<br>
 
@@ -33,7 +34,8 @@ The results were:
 
 ![smote](https://user-images.githubusercontent.com/75437852/115767462-2e68fc00-a377-11eb-8acd-722ca7032ba4.PNG)<br>
 <br>
-  3.  **Cluster Centroid:**  The Cluster Centroid model is the opposite of the SMOTE model where the majority class is minimized (undersampled) to match the minority class by synthesizing points to match neighboring values.  This method balances both classes as well. <br.
+<br>
+3.  **Cluster Centroid:**  The Cluster Centroid model is the opposite of the SMOTE model where the majority class is minimized (undersampled) to match the minority class by synthesizing points to match neighboring values.  This method balances both classes as well. <br.
 
 ![undersampling_class_count](https://user-images.githubusercontent.com/75437852/115775996-991f3500-a381-11eb-802d-188a6355a41c.PNG)<br>
 
@@ -45,7 +47,9 @@ The results were:<br>
               
 ![undersampling](https://user-images.githubusercontent.com/75437852/115776355-059a3400-a382-11eb-831e-2228356dbf63.PNG)<br>
 <br>  
-  4.  **SMOTEENN:**  In this algorithm, both the SMOTE concept and undersampling are combined.  After the SMOTE technique is completed, the outliers from each class are dropped.  Again resulting in a balanced set of classes.<br>
+<br>
+
+4.  **SMOTEENN:**  In this algorithm, both the SMOTE concept and undersampling are combined.  After the SMOTE technique is completed, the outliers from each class are dropped.  Again resulting in a balanced set of classes.<br>
 
 ![smoteen_class_count](https://user-images.githubusercontent.com/75437852/115777398-39c22480-a383-11eb-9eea-3fa6b90431f4.PNG)<br>
 
@@ -61,7 +65,8 @@ The results were:<br>
 ### Ensemble Algorithms
 The last 2 models are based on ensemble classifiers.
 <br>
-  5.  **Balanced Random Forest Classifier:**  For this classifier, this model is able to provide a final predicition based on multiple predictions of smaller scale, each with a part of the data.  It randomly under_samples each bootstrap sample. <br>
+<br>
+5.  **Balanced Random Forest Classifier:**  For this classifier, this model is able to provide a final predicition based on multiple predictions of smaller scale, each with a part of the data.  It randomly under_samples each bootstrap sample. <br>
 
 The results are:<br>
   * Balanced accuracy score of 0.74
@@ -71,7 +76,8 @@ The results are:<br>
               
 ![forest](https://user-images.githubusercontent.com/75437852/115800450-a26fc800-a3a8-11eb-8d7e-f175189ff2c3.PNG)<br>
     <br>
-  6.  **Easy Ensemble AdaBoost Classifier:**  In this model, the weak learners are combined into a strong learner.  Each model is then trained on any errors from the previous model. <br>
+    <br>
+6.  **Easy Ensemble AdaBoost Classifier:**  In this model, the weak learners are combined into a strong learner.  Each model is then trained on any errors from the previous model. <br>
 
 The results are:
   * Balanced accuracy score of 0.93
@@ -79,7 +85,7 @@ The results are:
   * Recall:  High Risk of 0.92 and Low Risk of 0.94<br>
 
 ![booster](https://user-images.githubusercontent.com/75437852/115800460-a996d600-a3a8-11eb-8473-6c1c591865b6.PNG)<br>
-
+<br>
 
 ## Summary: 
 In order to identify the best possible model to predict credit risk, the average F1 scores would need to be reviewed.  The F1 score would be more useful then the accuracy score since there is such an uneven class distribution.  <br>
