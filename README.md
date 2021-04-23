@@ -48,7 +48,6 @@ The results were:<br>
 ![undersampling](https://user-images.githubusercontent.com/75437852/115776355-059a3400-a382-11eb-831e-2228356dbf63.PNG)<br>
 <br>  
 <br>
-
 4.  **SMOTEENN:**  In this algorithm, both the SMOTE concept and undersampling are combined.  After the SMOTE technique is completed, the outliers from each class are dropped.  Again resulting in a balanced set of classes.<br>
 
 ![smoteen_class_count](https://user-images.githubusercontent.com/75437852/115777398-39c22480-a383-11eb-9eea-3fa6b90431f4.PNG)<br>
