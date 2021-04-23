@@ -91,7 +91,7 @@ In order to identify the best possible model to predict credit risk, the average
 In all the resampling algorithms, Cluster Centroid was the least optimal in predicting credit risk with an accuracy score of 0.54 and F1 score of 0.56.  So far the highest F1 score within the resampling models is the SMOTE method at 0.81, however looking at the accuracy score it is moderate at 0.65. <br>
 There was not much of a difference in the F1 scores and accuracy scores between the Random Over Sampling and the SMOTEEN; both models faired moderately in predicting credit risk.  <br>
 All resampling models precision scores were the same.
-<br>
+
 <br>
 Between the two ensemble learners, both models had a good F1 score, though the accuracy score for the balanced random forest classifier was lower at 0.73.<br>
 Thus far, looking at the weighted F1 scores, the Easy Ensemble AdaBoost Classifier had the highest score of 0.97 accuracy of prediction for each class.  Keeping in mind the balanced accuracy score is also high at 0.93.<br>
