@@ -2,16 +2,17 @@
 
 ## Overview of the analysis: 
 Credit card credit data has been acquired from LendingClub, a peer-to-peer lending service company, to assist in evaluating which machine learning methods/algorithms offer the best predictions for credit risk.  This analysis will be used to help FastLending, another peer-to-peer lending service, who would like to introduce machine learning methods to their loan application process.  They believe this would be more efficient in time and accuracy to identify good candidates for loans and therefore reduce the default rates.
-
+<br>
+<br>
 ## Results: 
 After the data was cleaned and preprocessed Six machine learning models have been used to identify the balanced accuracy scores and the precision and recall scores.
 <br>
-### Resampling Algorithms
+#### Resampling Algorithms
 The first 4 models below are based on resampling data.
 <br>
-  1.  ***Random Oversampling*** <br>
+  1.  **Random Oversampling**<br>
   In this algorithm, the minority class is selected randomly and added to the training set until both majority and minority classes are balanced. <br>
-  <br>
+  
   
 ![randomoversampling_class_count](https://user-images.githubusercontent.com/75437852/115762647-b21fea00-a371-11eb-81c0-4571054fa0bd.PNG)
   <br>
