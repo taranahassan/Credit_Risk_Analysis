@@ -7,73 +7,68 @@ Credit card credit data has been acquired from LendingClub, a peer-to-peer lendi
 ## Results: 
 After the data was cleaned and preprocessed Six machine learning models have been used to identify the balanced accuracy scores and the precision and recall scores.
 <br>
-#### Resampling Algorithms
+<br>
+### Resampling Algorithms
 The first 4 models below are based on resampling data.
 <br>
   1.  **Random Oversampling**<br>
-  In this algorithm, the minority class is selected randomly and added to the training set until both majority and minority classes are balanced. <br>
-  
-  
-![randomoversampling_class_count](https://user-images.githubusercontent.com/75437852/115762647-b21fea00-a371-11eb-81c0-4571054fa0bd.PNG)
+  In this algorithm, the minority class is selected randomly and added to the training set until both majority and minority classes are balanced. <br>                          ![randomoversampling_class_count](https://user-images.githubusercontent.com/75437852/115762647-b21fea00-a371-11eb-81c0-4571054fa0bd.PNG) <br>
   <br>
-  The results were:
+  The results were:<br>
         - Balanced accuracy score at 0.66 - the average recall obtained on each class
         - Precision:
               High Risk of 0.01
               Low Risk of 1.00
         - Recall:
               High Risk of 0.74
-              Low Risk of 0.58
+              Low Risk of 0.58<br>
               <br>
-![randomoversampling](https://user-images.githubusercontent.com/75437852/115762686-bb10bb80-a371-11eb-825f-3b3b9b850827.PNG)
+![randomoversampling](https://user-images.githubusercontent.com/75437852/115762686-bb10bb80-a371-11eb-825f-3b3b9b850827.PNG)<br>
   <br>
   2.  ***SMOTE*** <br>
   This oversampling method is by creating synthetic points for the minority class based on the values of the neighboring instances.  As per the image below, the classes are balanced.<br>
-  <br>
-![smote_class_count](https://user-images.githubusercontent.com/75437852/115762714-c2d06000-a371-11eb-805a-515f90ccbf64.PNG)
+![smote_class_count](https://user-images.githubusercontent.com/75437852/115762714-c2d06000-a371-11eb-805a-515f90ccbf64.PNG)<br>
 <br>
-  The results were:
+  The results were:<br>
         - Balanced accuracy score slightly better than previous model - 0.65
         - Precision:
               High Risk of 0.01
               Low Risk of 1.00
         - Recall:
               High Risk of 0.62
-              Low Risk of 0.68
+              Low Risk of 0.68<br>
               <br>
-![smote](https://user-images.githubusercontent.com/75437852/115767462-2e68fc00-a377-11eb-8acd-722ca7032ba4.PNG)
+![smote](https://user-images.githubusercontent.com/75437852/115767462-2e68fc00-a377-11eb-8acd-722ca7032ba4.PNG)<br>
 <br>
   3.  ***Cluster Centroid*** <br>
   The Cluster Centroid model is the opposite of the SMOTE model where the majority class is minimized (undersampled) to match the minority class by synthesizing points to match neighboring values.  This method balances both classes as well. <br.
-  <br>
-![undersampling_class_count](https://user-images.githubusercontent.com/75437852/115775996-991f3500-a381-11eb-802d-188a6355a41c.PNG)
+![undersampling_class_count](https://user-images.githubusercontent.com/75437852/115775996-991f3500-a381-11eb-802d-188a6355a41c.PNG)<br>
 <br>
-  The results were:
+  The results were:<br>
         - Balanced accuracy score lower than both the oversampling models at 0.54
         - Precision:
               High Risk of 0.01
               Low Risk of 1.00
         - Recall:
               High Risk of 0.69
-              Low Risk of 0.40
+              Low Risk of 0.40<br>
               <br>
-![undersampling](https://user-images.githubusercontent.com/75437852/115776355-059a3400-a382-11eb-831e-2228356dbf63.PNG)
+![undersampling](https://user-images.githubusercontent.com/75437852/115776355-059a3400-a382-11eb-831e-2228356dbf63.PNG)<br>
 <br>  
   4.  ***SMOTEENN*** <br>
   In this algorithm, both the SMOTE concept and undersampling are combined.  After the SMOTE technique is completed, the outliers from each class are dropped.  Again resulting in a balanced set of classes.<br>
-  <br>
-![smoteen_class_count](https://user-images.githubusercontent.com/75437852/115777398-39c22480-a383-11eb-9eea-3fa6b90431f4.PNG)
+![smoteen_class_count](https://user-images.githubusercontent.com/75437852/115777398-39c22480-a383-11eb-9eea-3fa6b90431f4.PNG)<br>
 <br>
-  The results were:
+  The results were:<br>
         - Balanced accuracy score better at 0.68
         - Precision:
               High Risk of 0.01
               Low Risk of 1.00
         - Recall:
               High Risk of 0.77
-              Low Risk of 0.59
+              Low Risk of 0.59<br>
               <br>
-![smoteen](https://user-images.githubusercontent.com/75437852/115784672-721a3080-a38c-11eb-9a72-827ac067a380.PNG)
+![smoteen](https://user-images.githubusercontent.com/75437852/115784672-721a3080-a38c-11eb-9a72-827ac067a380.PNG)<br>
 <br>
               <br>
 ### Ensemble Algorithms
@@ -82,30 +77,30 @@ The last 2 models are based on ensemble classifiers.
   5.  ***Balanced Random Forest Classifier*** <br>
   For this classifier, this model is able to provide a final predicition based on multiple predictions of smaller scale, each with a part of the data.  It randomly under_samples each bootstrap sample. <br>
   <br>
-  The results are:
+  The results are:<br>
         - Balanced accuracy score of 0.74
         - Precision:
               High Risk of 0.06
               Low Risk of 1.00
         - Recall:
               High Risk of 0.52
-              Low Risk of 0.95
+              Low Risk of 0.95<br>
               <br>
-![forest](https://user-images.githubusercontent.com/75437852/115800450-a26fc800-a3a8-11eb-8d7e-f175189ff2c3.PNG)
+![forest](https://user-images.githubusercontent.com/75437852/115800450-a26fc800-a3a8-11eb-8d7e-f175189ff2c3.PNG)<br>
     <br>
   6.  ***Easy Ensemble AdaBoost Classifier*** <br>
   In this model, the weak learners are combined into a strong learner.  Each model is then trained on any errors from the previous model. <br>
   <br>
-  The results are:
+  The results are:<br>
         - Balanced accuracy score of 0.93
         - Precision:
               High Risk of 0.09
               Low Risk of 1.00
         - Recall:
               High Risk of 0.92
-              Low Risk of 0.94
+              Low Risk of 0.94<br>
               <br>
-![booster](https://user-images.githubusercontent.com/75437852/115800460-a996d600-a3a8-11eb-8473-6c1c591865b6.PNG)
+![booster](https://user-images.githubusercontent.com/75437852/115800460-a996d600-a3a8-11eb-8473-6c1c591865b6.PNG)<br>
 
 
 ## Summary: 
