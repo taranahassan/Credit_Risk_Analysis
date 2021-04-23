@@ -10,9 +10,8 @@ After the data was cleaned and preprocessed Six machine learning models have bee
 ### Resampling Algorithms
 The first 4 models below are based on resampling data.
 <br>
-  1.  **Random Oversampling**<br>
-  In this algorithm, the minority class is selected randomly and added to the training set until both majority and minority classes are balanced. <br> 
-  <br>
+  1.  **Random Oversampling:**  In this algorithm, the minority class is selected randomly and added to the training set until both majority and minority classes are balanced. <br> 
+
 ![randomoversampling_class_count](https://user-images.githubusercontent.com/75437852/115762647-b21fea00-a371-11eb-81c0-4571054fa0bd.PNG) <br>
   
 The results were:
