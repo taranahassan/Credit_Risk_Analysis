@@ -73,7 +73,7 @@ The results are:<br>
   * Recall:  High Risk of 0.52 and Low Risk of 0.95
 
               
-![forest](https://user-images.githubusercontent.com/75437852/115800450-a26fc800-a3a8-11eb-8d7e-f175189ff2c3.PNG)<br>
+![forest](https://user-images.githubusercontent.com/75437852/115803785-95a2a280-a3af-11eb-9dd2-9293dc76fffe.PNG)<br>
     <br>
     <br>
 6.  **Easy Ensemble AdaBoost Classifier:**  In this model, the weak learners are combined into a strong learner.  Each model is then trained on any errors from the previous model. <br>
@@ -83,7 +83,7 @@ The results are:
   * Precision:  High Risk of 0.09 and Low Risk of 1.00
   * Recall:  High Risk of 0.92 and Low Risk of 0.94<br>
 
-![booster](https://user-images.githubusercontent.com/75437852/115800460-a996d600-a3a8-11eb-8473-6c1c591865b6.PNG)<br>
+![booster](https://user-images.githubusercontent.com/75437852/115803808-9e937400-a3af-11eb-9366-eeeae3f51186.PNG)<br>
 <br>
 
 ## Summary: 
